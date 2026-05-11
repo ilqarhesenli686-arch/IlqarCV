@@ -59,13 +59,7 @@ main{
     align-items: center;
     padding: 0 100px;
 } */
-.about{
-    grid-area: about;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+
 .bio{
     grid-area: bio;
      height:100vh;
@@ -681,21 +675,12 @@ body{
     0%{ top: 8px; opacity: 1; }
     100%{ top: 25px; opacity: 0; }
 }
-.about-left{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 60px;
-    /* top: -200px; */
-    /* left: 100px; */
-}
 
 .exp {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 1.7em;
 }
 
 .usimg {
@@ -706,6 +691,7 @@ body{
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 1.7em;
 
 }
 .usimg2{
@@ -733,14 +719,33 @@ body{
     font-size: 2em;
 }
 
+.about-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    margin-left: 500px;
+    /* top: -200px; */
+    /* left: 100px; */
+}
 .about{
+    grid-area: about;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* .about{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 100px;
     position: relative;
     
-}
+} */
 .about::before{
     content: "";
     position: absolute;
@@ -758,8 +763,10 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 60px;
-    margin-top: 80px;
+    gap: 50px;
+    margin-top: 150px;
+    margin-right: 400px;
+    font-size: 1.7em;
 }
 .cont{
     display: flex;
@@ -880,4 +887,408 @@ textarea:focus{
 }   
 .social{
     margin-top: 25px;
+}
+
+/* =========================
+TABLET / IPAD RESPONSIVE
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        gap: 25px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    nav a{
+        font-size: 16px;
+    }
+
+    /* HERO */
+
+    .I{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 30px;
+    }
+
+    .left{
+        align-items: center;
+    }
+
+    .photo{
+        height: 500px;
+        margin-bottom: 0;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    /* ABOUT */
+
+    .about{
+        flex-direction: column;
+        gap: 60px;
+        padding: 50px;
+    }
+
+    .about::before{
+        display: none;
+    }
+
+    .about-left{
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right{
+        margin-right: 0;
+        margin-top: 0;
+        align-items: center;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    /* BIO */
+
+    .bio{
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+        padding: 80px 40px;
+    }
+
+    .bioimg{
+        width: 450px;
+        transform: translateY(0);
+    }
+
+    .bioright{
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .greenbio::before{
+        display: none;
+    }
+
+    /* SKILLS */
+
+    .skills{
+        height: auto;
+        padding: 80px 30px;
+    }
+
+    .skill-progress{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .myskill{
+        font-size: 65px;
+        text-align: center;
+    }
+
+    /* EXPERIENCE */
+
+    .experience{
+        margin-top: 0;
+        padding: 80px 30px;
+    }
+
+    .expgreen{
+        font-size: 65px;
+        text-align: center;
+    }
+
+    .timeline{
+        width: 100%;
+        min-height: 1000px;
+    }
+
+    .ptx,
+    .admin,
+    .tekstil{
+        position: static;
+        margin: 40px auto;
+        max-width: 700px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .line{
+        width: 60px;
+    }
+
+    .expgreen::after{
+        height: 750px;
+    }
+
+    /* CONTACT */
+
+    .call{
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .contact-box{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-form{
+        width: 100%;
+        align-items: center;
+    }
+
+    input,
+    textarea{
+        width: 90%;
+    }
+
+    .Send{
+        margin: 0;
+    }
+
+    .contact-image img{
+        width: 400px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+
+
+    .I{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 22px;
+    }
+
+    .left{
+        align-items: center;
+    }
+
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons button{
+        width: 100%;
+    }
+
+    .photo{
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+
+
+    .about{
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 40px;
+    }
+
+    .about::before{
+        display: none;
+    }
+
+    .about-left{
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right{
+        margin-right: 0;
+        margin-top: 0;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .exp,
+    .exp2{
+        flex-direction: column;
+    }
+
+
+
+    .bio{
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .bioimg{
+        width: 280px;
+        transform: translateY(0);
+    }
+
+    .bioright{
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .greenbio::before{
+        display: none;
+    }
+
+    .yasil,
+    .words{
+        font-size: 45px;
+    }
+
+
+
+    .skills{
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .myskill{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .skill-progress{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .htmlcss,
+    .JavaScript,
+    .react,
+    .Analytical{
+        width: 140px;
+        height: 140px;
+        font-size: 40px;
+    }
+
+    .htmlcss::after,
+    .JavaScript::after,
+    .react::after,
+    .Analytical::after{
+        width: 110px;
+        height: 110px;
+    }
+
+
+
+    .experience{
+        margin-top: 0;
+        padding: 50px 20px;
+    }
+
+    .expgreen{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .expgreen::after{
+        height: 700px;
+    }
+
+    .timeline{
+        width: 100%;
+        height: auto;
+    }
+
+    .line{
+        width: 50px;
+    }
+
+    .ptx,
+    .admin,
+    .tekstil{
+        position: static;
+        margin: 20px auto;
+        max-width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+
+    .call{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contact-box{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-form{
+        width: 100%;
+        align-items: center;
+    }
+
+    input,
+    textarea{
+        width: 100%;
+    }
+
+    .Send{
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact-image img{
+        width: 250px;
+    }
+
+  
+
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+  
 }
