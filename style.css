@@ -455,7 +455,7 @@ color: green;
     position: absolute;
 
     width: 3px;
-    height: 900px;
+    height: 950px;
 
     background: green;
 
@@ -761,5 +761,123 @@ body{
     gap: 60px;
     margin-top: 80px;
 }
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-top: 10px;
+    color: green;
+    font-size: 30px;
+    flex-direction: column;
+   
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.any{
+    color: green;
+}
+.call{
+    font-size: 120px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1000px;
+    
+}
+
+input,
+textarea{
+    width: 800px;
+    padding: 15px 0;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid #555;
+
+    color: white;
+    font-size: 18px;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus{
+    border-bottom:1px solid green;
+}
+.Send{
+    margin-left: 600px;
+    margin-right: 200px;
+}
 
 
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    margin-top: 50px;
+}
+
+.contact-image img{
+    width: 500px;
+    border-radius: 20px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 200px;
+    font-size: 30px;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.social-icons a{
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid green;
+    border-radius: 50%;
+
+    color: green;
+    font-size: 24px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    background: green;
+    color: white;
+
+    transform: translateY(-5px);
+}
+.footerheader{
+    color:#555 ;
+    font-size: 25px;
+}   
+.social{
+    margin-top: 25px;
+}
